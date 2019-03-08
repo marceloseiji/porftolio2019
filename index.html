@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"><!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Arquivo local css-->
+    <!--jQuery cdn-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!--Arquivo local javaScript-->
+    <script type="text/javascript" src="./javaScript.js"></script>
+    <!--SASS-->
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>marceloSeiji Portfolio</title>
+</head>
+
+<body onload='backgroundZoom(), strokeColor()'>
+  <section class='main'>
+    <div class="backgound-overlay">
+      <image id="background-img" class='background-image zoom' src="./imagens/fundo.jpg" />
+
+      <div class="row conteudos">
+        <div class="col s12 m6 l6 textos">
+          <h1>Olá</h1>
+          <p>
+            Olá, eu me chamo Marcelo Seiji. Estudo tecnologia em análise e desenvolvimento de sistemas na PUC-PR.
+            <br>
+            As principais áreas em que pretendo atuar são desenvolvimento Web e Mobile.
+            <br>
+            HTML, CSS, javaScript, React Native.
+            <br><br>
+            Me identifico e busco alinhar meus projetos com metodologias de desenvolvimento ágil. Priorizo
+            proatividade na busca por soluções.
+          </p>
+          <h1 class="titulo-nome">marceloSeiji</h1>
+        </div>
+
+        <div class="col s12 m6 l6 conjunto-hexagonos">
+          <div class="hexagonos01">
+
+            <!---->
+            <a class="modal-trigger" href="#modal-cursos">
+              <div class="hex01">
+                <svg class="hex">
+                  <defs>
+                    <pattern id="hex-img01" patternUnits="userSpaceOnUse" width="100%" height="100%">
+                      <image xlink:href="https://raw.githubusercontent.com/marceloseiji/porftolio2019/master/imagens/cursos.jpg" />
+                    </pattern>
+                  </defs>
+              
+                  <path class="hexpath" transform="rotate(90 87.26915740966797,99.98474121093751)" fill="url(#hex-img01)"
+                    d="m-12.384516,99.984739l42.708723,-87.336715l113.889918,0l42.708709,87.336715l-42.708709,87.336715l-113.889918,0l-42.708723,-87.336715z" />
+                  <h1 class="hextext">Cursos</h1>
+                </svg>
+              </div>
+            </a> 
+            <!---->
+            
+            <!---->
+            <a href="https://www.linkedin.com/in/marcelo-seiji-95a479169/" target="_blank">
+              <div class="hex01">
+                <svg class="hex">
+                  <defs>
+                    <pattern id="hex-img02" class="hexpath" patternUnits="userSpaceOnUse" width="100%" height="100%">
+                      <image
+                        xlink:href="https://raw.githubusercontent.com/marceloseiji/porftolio2019/master/imagens/linkedin%20icon.jpg" />
+                    </pattern>
+                  </defs>
+              
+                  <path id="hex02" transform="rotate(90 87.26915740966797,99.98474121093751)" fill="url(#hex-img02)"
+                    d="m-12.384516,99.984739l42.708723,-87.336715l113.889918,0l42.708709,87.336715l-42.708709,87.336715l-113.889918,0l-42.708723,-87.336715z" />
+                  <h1 class="hextext">linkedin</h1>
+                </svg>
+              </div>
+            </a>
+            <!-- -->
+          </div>
+
+          <div class="hexagonos01">
+            <!--  -->
+            <a class="modal-trigger" href="#modal-cv">
+              <div class="hex01">
+                <svg class="hex">
+                  <defs>
+                    <pattern id="hex-img03" class="hexpath" patternUnits="userSpaceOnUse" width="100%" height="100%">
+                      <image
+                        xlink:href="https://raw.githubusercontent.com/marceloseiji/porftolio2019/master/imagens/foto_marceloperfil.jpg" />
+                    </pattern>
+                  </defs>
+              
+                  <path id="hex01" transform="rotate(90 87.26915740966797,99.98474121093751)" fill="url(#hex-img03)"
+                    d="m-12.384516,99.984739l42.708723,-87.336715l113.889918,0l42.708709,87.336715l-42.708709,87.336715l-113.889918,0l-42.708723,-87.336715z" />
+                  <h1 class="hextext">CV</h1>
+                </svg>
+              </div>
+            </a>
+            <!--  -->
+            
+            <!--  -->
+            <div class="hex01">
+              <a class="modal-trigger" href="#modal-starwars">
+                <svg class="hex">
+                  <defs>
+                    <pattern id="hex-img04" class="hexpath" patternUnits="userSpaceOnUse" width="100%" height="100%">
+                      <image xlink:href="https://raw.githubusercontent.com/marceloseiji/porftolio2019/master/imagens/ajax-swapi.jpg" />
+                    </pattern>
+                  </defs>
+                
+                  <path id="hex01" transform="rotate(90 87.26915740966797,99.98474121093751)" fill="url(#hex-img04)"
+                    d="m-12.384516,99.984739l42.708723,-87.336715l113.889918,0l42.708709,87.336715l-42.708709,87.336715l-113.889918,0l-42.708723,-87.336715z" />
+                  <h1 class="hextext">API</h1>
+                  <p class="hextext">StarWars</p>
+                </svg>
+              </a>
+            </div>
+            <!--  -->
+
+            <!--  -->
+            <div class="hex01">
+              <a class="modal-trigger" href="#modal-cep">
+                <svg class="hex">
+                  <defs>
+                    <pattern id="hex-img05" class="hexpath" patternUnits="userSpaceOnUse" width="100%" height="100%">
+                      <image xlink:href="https://raw.githubusercontent.com/marceloseiji/porftolio2019/master/imagens/apicep.jpg" />
+                    </pattern>
+                  </defs>
+              
+                  <path id="hex01" transform="rotate(90 87.26915740966797,99.98474121093751)" fill="url(#hex-img05)"
+                    d="m-12.384516,99.984739l42.708723,-87.336715l113.889918,0l42.708709,87.336715l-42.708709,87.336715l-113.889918,0l-42.708723,-87.336715z" />
+                  <h1>API</h1>
+                  <p class="hextext">cep</p>
+                </svg>
+              </a>
+            </div>
+            <!--  -->
+          </div>
+          
+          <div class="hexagonos01">
+            
+            <a href="https://marceloseiji.github.io/slalom_tricks/index.html" target="_blank">
+              <div class="hex01">
+                <svg class="hex">
+                  <defs>
+                    <pattern id="hex-img06" class="hexpath" patternUnits="userSpaceOnUse" width="100%" height="100%">
+                      <image
+                        xlink:href="https://raw.githubusercontent.com/marceloseiji/porftolio2019/master/imagens/site-slalom.jpg" />
+                    </pattern>
+                  </defs>
+              
+                  <path id="hex01" transform="rotate(90 87.26915740966797,99.98474121093751)" fill="url(#hex-img06)"
+                    d="m-12.384516,99.984739l42.708723,-87.336715l113.889918,0l42.708709,87.336715l-42.708709,87.336715l-113.889918,0l-42.708723,-87.336715z" />
+                  <h1 class="hextext">Site</h1>
+                </svg>
+              </div>
+            </a>
+            <!---->
+            
+            <!---->
+            <a href="https://codepen.io/marceloseiji/full/ELwYWx/" target="_blank">
+              <div class="hex01">
+                <svg class="hex">
+                  <defs>
+                    <pattern id="hex-img07" class="hexpath" patternUnits="userSpaceOnUse" width="100%" height="100%">
+                      <image
+                        xlink:href="https://github.com/marceloseiji/porftolio2019/blob/master/imagens/jrrtolkien-smoking.jpg?raw=true" />
+                    </pattern>
+                  </defs>
+              
+                  <path id="hex07" transform="rotate(90 87.26915740966797,99.98474121093751)" fill="url(#hex-img07)"
+                    d="m-12.384516,99.984739l42.708723,-87.336715l113.889918,0l42.708709,87.336715l-42.708709,87.336715l-113.889918,0l-42.708723,-87.336715z" />
+                    <h1 class="hextext">Site</h1>
+                </svg>
+              </div>
+            </a>
+            <!---->
+          
+            <!---->
+            <div class="hex01 visibility-hidden">
+              <svg class="hex">
+                <defs>
+                  <pattern id="hex-img07" class="hexpath" patternUnits="userSpaceOnUse" width="100%" height="100%">
+                    <image xlink:href="" />
+                  </pattern>
+                </defs>
+            
+                <path id="hex07" transform="rotate(90 87.26915740966797,99.98474121093751)" fill="url(#hex-img07)"
+                  d="m-12.384516,99.984739l42.708723,-87.336715l113.889918,0l42.708709,87.336715l-42.708709,87.336715l-113.889918,0l-42.708723,-87.336715z" />
+              </svg>
+            </div>
+            <!---->
+
+            <!---->
+            <div class="hex01 visibility-hidden">
+              <svg class="hex">
+                <defs>
+                  <pattern id="hex-img07" class="hexpath" patternUnits="userSpaceOnUse" width="100%" height="100%">
+                    <image xlink:href="" />
+                  </pattern>
+                </defs>
+            
+                <path id="hex07" transform="rotate(90 87.26915740966797,99.98474121093751)" fill="url(#hex-img07)"
+                  d="m-12.384516,99.984739l42.708723,-87.336715l113.889918,0l42.708709,87.336715l-42.708709,87.336715l-113.889918,0l-42.708723,-87.336715z" />
+              </svg>
+            </div>
+            <!---->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <!--Modais-->
+  <!--Modal cursos-->
+  <div id="modal-cursos" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Cursos</h4>
+        <img class="responsive-img" src="https://marceloseiji.github.io/marceloSeiji_portfolio/images/marceloSeiji_freeCodeCamp_responsive_web_design.jpg">
+      <p>Responsive Web Design Certification (300 hours)</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+    </div>
+  </div>
+
+  <!--Modal CV-->
+  <div id="modal-cv" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Curriculum</h4>
+      <image class="responsive-img"
+        src="https://raw.githubusercontent.com/marceloseiji/porftolio2019/master/imagens/CV_Marcelo%20Seiji.jpg"></image>
+    </div>
+    <div class="modal-footer">
+      <a href="https://raw.githubusercontent.com/marceloseiji/porftolio2019/master/imagens/CV_Marcelo%20Seiji.jpg"
+        target="_blank" class="modal-close waves-effect waves-green btn-flat">Link Externo</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+    </div>
+  </div>
+
+  <!--Modal StarWars-->
+  <div id="modal-starwars" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>API StarWars</h4>
+      <iframe width="800px" height="400px" src="https://marceloseiji.github.io/API_starWars/" frameborder="0"
+        allowfullscreen></iframe>
+    </div>
+    <div class="modal-footer">
+      <a href="https://marceloseiji.github.io/API_starWars/" target="_blank"
+        class="modal-close waves-effect waves-green btn-flat">Link Externo</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+    </div>
+  </div>
+
+  <!--Modal CEP-->
+  <div id="modal-cep" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Buscar por CEP</h4>
+      <iframe width="800px" height="490px" src="https://marceloseiji.github.io/api_cep_marceloSeiji/" frameborder="0"
+        allowfullscreen></iframe>
+    </div>
+    <div class="modal-footer">
+      <a href="https://marceloseiji.github.io/API_starWars/" target="_blank"
+        class="modal-close waves-effect waves-green btn-flat">Link Externo</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+    </div>
+  </div>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

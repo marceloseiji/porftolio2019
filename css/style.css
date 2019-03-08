@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css?family=Questrial");
+@import url("https://fonts.googleapis.com/css?family=Staatliches");
+p, h1, h2, h3, h4, h5, h6 {
+  font-family: "Questrial", sans-serif;
+}
+
+html {
+  line-height: 1 !important;
+}
+
+.main .backgound-overlay {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(12, 64, 80, 0.5), black);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  height: 100vh;
+  transition: 2s;
+}
+.main .backgound-overlay .background-image {
+  min-height: 100%;
+  height: auto;
+  width: 100%;
+  position: fixed;
+  z-index: -10;
+}
+.main .backgound-overlay .zoom {
+  transition: 20s;
+  transform: scale(1);
+}
+.main .conteudos .conjunto-hexagonos {
+  position: relative;
+  float: right;
+  text-align: center;
+  top: 12vw;
+  right: 3%;
+}
+.main .conteudos .conjunto-hexagonos .hexagonos01 {
+  display: inline-flex;
+  height: 170px;
+}
+.main .conteudos .conjunto-hexagonos .hexagonos01 .hex01 {
+  width: 187px;
+  height: 200px;
+}
+.main .conteudos .conjunto-hexagonos .hexagonos01 .hex01 h1 {
+  text-align: center;
+  position: relative;
+  bottom: 120px;
+  right: 50px;
+  color: transparent;
+  display: inline-block;
+  transition: 0.5s;
+  transform: rotate(-35deg);
+  font-family: "Staatliches", cursive;
+}
+.main .conteudos .conjunto-hexagonos .hexagonos01 .hex01 p {
+  text-align: center;
+  position: relative;
+  bottom: 98px;
+  right: 99px;
+  color: transparent;
+  display: inline-block;
+  transition: 0.5s;
+  transform: rotate(-35deg);
+  font-family: "Staatliches", cursive;
+}
+.main .conteudos .conjunto-hexagonos .hexagonos01 .hex01:hover .hex {
+  filter: brightness(0.5);
+  stroke: #42f4df;
+  transform: scale(1.1);
+}
+.main .conteudos .conjunto-hexagonos .hexagonos01 .hex01:hover h1 {
+  color: white;
+  bottom: 162px;
+  right: -2px;
+}
+.main .conteudos .conjunto-hexagonos .hexagonos01 .hex01:hover p {
+  color: white;
+  bottom: 140px;
+  right: 30px;
+}
+.main .conteudos .conjunto-hexagonos .hexagonos01 .visibility-hidden {
+  visibility: hidden;
+}
+@media (max-width: 1500px) {
+  .main .conteudos .conjunto-hexagonos .hexagonos01 .visibility-hidden {
+    display: none;
+  }
+}
+@media (max-width: 420px) {
+  .main .conteudos .conjunto-hexagonos .hexagonos01 {
+    display: flex;
+  }
+}
+.main .conteudos .conjunto-hexagonos .hex {
+  margin: -16px 3px;
+  stroke-width: 3;
+  stroke: #42f4df;
+  transition: 0.8s;
+  width: 175px;
+  height: 200px;
+}
+@media (max-width: 1000px) {
+  .main .conteudos .conjunto-hexagonos {
+    transform: scale(0.8);
+    right: 6%;
+    height: 130px;
+  }
+}
+@media (max-width: 800px) {
+  .main .conteudos .conjunto-hexagonos {
+    transform: scale(0.6);
+    right: 10%;
+    top: 26vw;
+  }
+}
+@media (max-width: 600px) {
+  .main .conteudos .conjunto-hexagonos {
+    right: 3%;
+    top: 0vw;
+  }
+}
+@media (max-width: 420px) {
+  .main .conteudos .conjunto-hexagonos {
+    transform: scale(0.5);
+    right: 14%;
+    top: 0vw;
+  }
+}
+.main .conteudos .textos {
+  padding: 12vw 4vw 0vw 9vw;
+  color: white;
+}
+.main .conteudos .textos .titulo-nome {
+  letter-spacing: -3px;
+  font-weight: 900;
+}
+.main .conteudos .textos p {
+  color: white;
+  font-size: 18px;
+}
+@media (max-width: 420px) {
+  .main .conteudos .textos {
+    padding: 0vw 4vw 0vw 9vw;
+  }
+}
+
+.modal {
+  background-color: #555 !important;
+}
+.modal .modal-content {
+  color: #ccc;
+}
+.modal .modal-footer {
+  border-top: 1px solid #888 !important;
+  background-color: #555 !important;
+}
+.modal .modal-footer a {
+  color: #ccc;
+}
+
+@media (max-width: 420px) {
+  html {
+    line-height: normal !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .row {
+    margin-bottom: 0px !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

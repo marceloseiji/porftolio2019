@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+p, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Questrial', sans-serif;
+}
+
+$cian: #42f4df;
+$yellow: yellow;
+$sombra: #222;
+html {
+  line-height: 1 !important;
+}
+.main {
+  .backgound-overlay {
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(12, 64, 80, 0.5), rgba(0, 0, 0, 1));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    height: 100vh;
+    transition: 2s;
+    .background-image {
+      min-height: 100%;
+      height: auto;
+      width: 100%;
+      position: fixed;
+      z-index: -10;
+    }
+    .zoom {
+      transition: 20s;
+      transform: scale(1);
+    }
+  }
+  .conteudos {
+    .conjunto-hexagonos {
+      position: relative;
+      float: right;
+      text-align: center;
+      top: 12vw;
+      right: 3%;
+      .hexagonos01 {
+        display: inline-flex;
+        height: 170px;
+        .hex01 {
+          width: 187px;
+          height: 200px;
+          h1 {
+            text-align: center;
+            position: relative;
+            bottom: 120px;
+            right: 50px;
+            color: transparent;
+            display: inline-block;
+            transition: .5s;
+            transform: rotate(-35deg);
+            font-family: 'Staatliches', cursive;
+          }
+          p {
+            text-align: center;
+            position: relative;
+            bottom: 98px;
+            right: 99px;
+            color: transparent;
+            display: inline-block;
+            transition: .5s;
+            transform: rotate(-35deg);
+            font-family: 'Staatliches', cursive;
+          }
+          &:hover .hex {
+            filter: brightness(.5);
+            stroke: $cian;
+            transform: scale(1.1);
+          }
+          &:hover h1 {
+            color: white;
+            bottom: 162px;
+            right: -2px;
+          }
+          &:hover p {
+            color: white;
+            bottom: 140px;
+            right: 30px;
+          }
+        }
+        .visibility-hidden {
+          visibility: hidden;
+          @media(max-width: 1500px){
+            display: none;
+          }
+        }
+        @media(max-width: 420px){
+          display: flex;
+        }
+      }
+      .hex {
+        margin: -16px 3px;
+        stroke-width:3;
+        stroke: $cian;
+        transition: .8s;
+        width: 175px;
+        height: 200px;
+      }
+      @media(max-width: 1000px){
+        transform: scale(.8);
+        right: 6%;
+        height: 130px;
+      }
+      @media(max-width: 800px){
+        transform: scale(0.6);
+        right: 10%;
+        top: 26vw;
+      }
+      @media(max-width: 600px){
+        right: 3%;
+        top: 0vw;
+      }
+      @media(max-width: 420px){
+        transform: scale(.5);
+        right: 14%;
+        top: 0vw;
+      }
+    }
+    .textos {
+      padding: 12vw 4vw 0vw 9vw;
+      color: white;
+      .titulo-nome {
+        letter-spacing: -3px;
+        font-weight: 900;
+      }
+      p{
+        color: white;
+        font-size: 18px;
+      }
+      @media(max-width: 420px){
+        padding: 0vw 4vw 0vw 9vw;
+      }
+    }
+  }
+}
+.modal {
+  background-color: #555 !important;
+  .modal-content {
+    color: #ccc
+  }
+  .modal-footer {
+    border-top: 1px solid  #888 !important;
+    background-color: #555 !important;
+    a {
+      color: #ccc;
+    }
+  }
+}
+html {
+  @media(max-width: 420px) {
+    line-height: normal !important;
+  }
+}
+.row {
+  @media(max-width: 420px) {
+    margin-bottom: 0px !important;
+  }
+}
