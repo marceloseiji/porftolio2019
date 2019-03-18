@@ -32,8 +32,13 @@ html {
   position: relative;
   float: right;
   text-align: center;
-  top: 12vw;
+  top: 19vh;
   right: 3%;
+}
+@media (max-height: 760px) {
+  .main .conteudos .conjunto-hexagonos {
+    top: inherit;
+  }
 }
 .main .conteudos .conjunto-hexagonos .hexagonos01 {
   display: inline-flex;
@@ -128,9 +133,20 @@ html {
     top: 0vw;
   }
 }
+@media (max-height: 760px) {
+  .main .conteudos .conjunto-hexagonos {
+    transform: scale(0.8);
+  }
+}
 .main .conteudos .textos {
-  padding: 12vw 4vw 0vw 9vw;
+  padding: 19vh 4vw 0vw 9vw;
   color: white;
+}
+@media (max-height: 760px) {
+  .main .conteudos .textos {
+    top: inherit;
+    padding: 6vh 4vw 0vw 9vw;
+  }
 }
 .main .conteudos .textos .titulo-nome {
   letter-spacing: -3px;

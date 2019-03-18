@@ -36,8 +36,11 @@ html {
       position: relative;
       float: right;
       text-align: center;
-      top: 12vw;
+      top: 19vh;
       right: 3%;
+      @media(max-height: 760px) {
+        top: inherit;
+      }
       .hexagonos01 {
         display: inline-flex;
         height: 170px;
@@ -119,10 +122,17 @@ html {
         right: 14%;
         top: 0vw;
       }
+      @media(max-height: 760px) {
+        transform: scale(.8);
+      }
     }
     .textos {
-      padding: 12vw 4vw 0vw 9vw;
+      padding: 19vh 4vw 0vw 9vw;
       color: white;
+      @media(max-height: 760px) {
+        top: inherit;
+        padding: 6vh 4vw 0vw 9vw;
+      }
       .titulo-nome {
         letter-spacing: -3px;
         font-weight: 900;
